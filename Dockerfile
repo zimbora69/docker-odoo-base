@@ -46,7 +46,7 @@ RUN mkdir /var/log/odoo && \
     ln -s /opt/odoo/odoo/odoo-bin /usr/bin/odoo-server && \
     ln -s /etc/odoo/odoo.conf && \
     ln -s /var/log/odoo/odoo.log && \
-    useradd --system --home /opt --shell /bin/bash --uid 1040 odoo && \
+    useradd --system --home /opt --shell /bin/bash --uid 1040 odoo100 && \
     chown -R odoo:odoo /opt && \
     chown -R odoo:odoo /var/log/odoo && \
     chown odoo:odoo /var/run/odoo.pid
